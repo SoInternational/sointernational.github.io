@@ -3,7 +3,7 @@
   "scripts": {
     "preinstall": "npx newest",
     "start": "yarn -s build:photos && webpack serve",
-    "build": "npx del-cli \"docs/*\" \"!docs/photos*\" && yarn build:photos && yarn build:webpack",
+    "build": "npx del-cli \"docs/*\" \"!docs/{photos*,CNAME}\" && yarn build:photos && yarn build:webpack",
     "build:photos": "node build/photos.js",
     "build:webpack": "cross-env NODE_ENV=production webpack",
     "clean": "git clean -fdX"
@@ -30,6 +30,13 @@
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
     "babel-loader": "^8.1.0",
+    "calipers": "^2.0.1",
+    "calipers-bmp": "^2.0.0",
+    "calipers-gif": "^2.0.0",
+    "calipers-jpeg": "^2.0.0",
+    "calipers-png": "^2.0.0",
+    "calipers-svg": "^2.0.1",
+    "calipers-webp": "^2.0.0",
     "chmodx": "^1.0.0",
     "copy-webpack-plugin": "^6.2.1",
     "cross-env": "^7.0.2",
