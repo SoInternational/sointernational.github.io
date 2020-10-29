@@ -10,7 +10,7 @@
     "preinstall": "npx newest",
     "start": "webpack serve",
     "build": "yarn -s clean && yarn webpack",
-    "clean": "npx trash-cli build",
+    "clean": "npx trash-cli docs",
     "webpack": "cross-env NODE_ENV=production webpack"
   },
   "devDependencies": {

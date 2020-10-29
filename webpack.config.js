@@ -64,7 +64,7 @@ module.exports = {
         {
           from: "public",
           noErrorOnMissing: true,
-          globOptions: { ignore: [path.resolve("public/{index.html,favicon.png,bundle}")] },
+          globOptions: { ignore: [path.resolve("public/index.html")] },
         },
       ],
     }),
@@ -72,7 +72,6 @@ module.exports = {
       inject: true,
       minify: false,
       template: path.resolve("public/index.html"),
-      favicon: path.resolve("public/favicon.png"),
     }),
   ],
   devServer: {
