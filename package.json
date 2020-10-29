@@ -1,8 +1,4 @@
 {
-  "name": "sointernational.love",
-  "version": "1.0.0",
-  "repository": "github@github.com:SoInternational/homepage.git",
-  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "preinstall": "npx newest",
@@ -11,6 +7,13 @@
     "build:photos": "node build/photos.js",
     "build:webpack": "cross-env NODE_ENV=production webpack",
     "clean": "git clean -fdX"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "regenerator-runtime": "^0.13.7",
+    "yaml": "^1.10.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
@@ -43,12 +46,5 @@
     "webpack": "^5.3.1",
     "webpack-cli": "^4.1.0",
     "webpack-dev-server": "^3.11.0"
-  },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "regenerator-runtime": "^0.13.7",
-    "yaml": "^1.10.0"
   }
 }
