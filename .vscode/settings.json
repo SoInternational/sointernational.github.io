@@ -1,4 +1,10 @@
 {
   "cSpell.words": ["apng", "chmodx", "chunkhash", "downlevel", "preinstall"],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/packages-cache": true
+  },
   "javascript.suggestionActions.enabled": false
 }

@@ -1,17 +1,16 @@
 {
-  "name": "homepage",
+  "name": "sointernational.love",
   "version": "1.0.0",
-  "description": "sointernational.love",
-  "repository": "git@github.com:SoInternational/homepage.git",
-  "author": "Chris & Bhavna <git@sointernational.love>",
+  "repository": "github@github.com:SoInternational/homepage.git",
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "preinstall": "npx newest",
-    "start": "webpack serve",
+    "start": "yarn -s build:photos && webpack serve",
     "build": "npx del-cli \"docs/*\" \"!docs/photos*\" && yarn build:photos && yarn build:webpack",
     "build:photos": "node build/photos.js",
-    "build:webpack": "cross-env NODE_ENV=production webpack"
+    "build:webpack": "cross-env NODE_ENV=production webpack",
+    "clean": "git clean -fdX"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
