@@ -1,0 +1,16 @@
+src: /photos
+name: ""
+description: ""
+photos:
+  - src: /photos/09663A30-FDE1-4152-90A6-B0F3D4B6CE98_1_105_c.jpeg
+    name: ""
+    description: ""
+children:
+  - src: /photos/fungus
+    name: ""
+    description: ""
+    photos:
+      - src: /photos/fungus/75ECBC6B-6D43-4682-9D7D-69D9B761C762_1_105_c.jpeg
+        name: ""
+        description: ""
+    children: []

@@ -9,9 +9,9 @@
   "scripts": {
     "preinstall": "npx newest",
     "start": "webpack serve",
-    "build": "yarn -s clean && yarn webpack",
-    "clean": "npx trash-cli docs",
-    "webpack": "cross-env NODE_ENV=production webpack"
+    "build": "npx del-cli \"docs/*\" \"!docs/photos*\" && yarn build:photos && yarn build:webpack",
+    "build:photos": "node build/photos.js",
+    "build:webpack": "cross-env NODE_ENV=production webpack"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
@@ -49,6 +49,7 @@
     "core-js": "^3.6.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "regenerator-runtime": "^0.13.7"
+    "regenerator-runtime": "^0.13.7",
+    "yaml": "^1.10.0"
   }
 }
